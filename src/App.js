@@ -27,7 +27,7 @@ function App() {
     try {
       const formData = new FormData();
       formData.append('image', selectedFile);
-      const res = await fetch('http://localhost:5000/analyze', {
+      const res = await fetch('https://server-1-7t2r.onrender.com/analyze', {
         method: 'POST',
         body: formData
       });
