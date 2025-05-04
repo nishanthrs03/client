@@ -28,7 +28,7 @@ function App() {
     try {
       const formData = new FormData();
       formData.append('image', selectedFile);
-      const res = await fetch('https://food-calorie-estimator-xi58.onrender.com/analyze', {
+      const res = await fetch('https://server-1-7t2r.onrender.com', {
         method: 'POST',
         body: formData
       });
