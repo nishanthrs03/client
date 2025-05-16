@@ -27,7 +27,7 @@ function App() {
     try {
       const formData = new FormData();
       formData.append('image', selectedFile);
-      const res = await fetch(' https://food-nutrition-estimation-173230188960.asia-south1.run.app/analyze', {
+      const res = await fetch(' https://server-1-7t2r.onrender.com/analyze', {
         method: 'POST',
         body: formData
       });
